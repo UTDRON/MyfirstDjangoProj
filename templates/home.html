@@ -1,0 +1,21 @@
+<h1>THIS is HOMEPAGE</h1>
+{{message}}
+
+<form action="{% url 'count' %}">
+<!telling where we want to go
+inside the quote we'll have url 
+for the next page>
+<!instead of putting action='count' we use
+the way with %url ''% because it will allow
+whatever name we pass as third argument to
+path() in views.py it'll reference it accordingly
+irrespective of the names in first argument>
+
+    <textarea cols="40" rows="5" name="fulltext"></textarea>
+    <br>
+    <br>
+    <input type="submit" value="Count"/>
+    <br>
+    
+</form>
+<a href="{% url 'about' %}">About</a>
